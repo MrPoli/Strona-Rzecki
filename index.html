@@ -77,8 +77,8 @@
     <!-- Strona główna -->
     <header
       id="stronaGlowna"
-      class="vh-100"
-      style="background: url(./Photo/roomv2.jpg) center/cover no-repeat"
+      class="vh-100 border-bottom border-1 border-dark"
+      style="background: url(./Photo/roomv2.jpg) center/cover no-repeat fixed"
     >
       <div class="container h-75">
         <div
@@ -99,33 +99,25 @@
     <section
       id="salaSzkoleniowa"
       class="vh-100"
-      style="background: url(./Photo/room2.jpg) center/cover no-repeat"
+      style="background: url(./Photo/room2.jpg) center/cover no-repeat fixed"
     >
-      <div class="row row-cols-2 h-100">
-        <div class="col-7"></div>
-        <div
-          class="col-5"
-          style="
-            background: linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 0.116) 1%,
-              rgba(0, 0, 0, 0.733) 5%,
-              rgba(0, 0, 0, 0.883) 50%
-            );
-          "
-        >
-          <h1
-            class="text-white display-6 text-center mt-4 py-5"
-            style="font-family: 'Cinzel', serif"
-          >
-            Sala szkoleniowa
-          </h1>
-          <h4 class="text-white fw-light text-left px-5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-            numquam explicabo eaque laboriosam ipsum illum deleniti voluptate
-            similique atque corrupti facilis, odio perferendis suscipit facere
-            itaque amet? Veritatis, tenetur nulla?
-          </h4>
+      <div class="container">
+        <div class="row row-cols-2 h-100">
+          <div class="col-6"></div>
+          <div class="col-6 bg-dark vh-100">
+            <h1
+              class="text-white display-6 text-center mt-4 py-5"
+              style="font-family: 'Cinzel', serif"
+            >
+              Sala szkoleniowa
+            </h1>
+            <h4 class="text-white fw-light text-left px-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              numquam explicabo eaque laboriosam ipsum illum deleniti voluptate
+              similique atque corrupti facilis, odio perferendis suscipit facere
+              itaque amet? Veritatis, tenetur nulla?
+            </h4>
+          </div>
         </div>
       </div>
     </section>
@@ -133,38 +125,32 @@
     <section
       id="wynajem"
       class="vh-100"
-      style="background: url(./Photo/room2.jpg) center/cover no-repeat"
+      style="background: url(./Photo/room2.jpg) center/cover no-repeat fixed"
     >
-      <div class="row row-cols-2 h-100">
-        <div
-          class="col-5"
-          style="
-            background: linear-gradient(
-              270deg,
-              rgba(0, 0, 0, 0.116) 1%,
-              rgba(0, 0, 0, 0.733) 5%,
-              rgba(0, 0, 0, 0.883) 50%
-            );
-          "
-        >
-          <h1
-            class="text-white display-6 text-center mt-4 py-5"
-            style="font-family: 'Cinzel', serif"
-          >
-            Wynajem pomieszczeń
-          </h1>
-          <h4 class="text-white fw-light text-left px-5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-            numquam explicabo eaque laboriosam ipsum illum deleniti voluptate
-            similique atque corrupti facilis, odio perferendis suscipit facere
-            itaque amet? Veritatis, tenetur nulla?
-          </h4>
+      <div class="container">
+        <div class="row row-cols-2 h-100">
+          <div class="col-6 bg-dark vh-100">
+            <h1
+              class="text-white display-6 text-center mt-4 py-5"
+              style="font-family: 'Cinzel', serif"
+            >
+              Wynajem pomieszczeń
+            </h1>
+            <h4 class="text-white fw-light text-left px-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              numquam explicabo eaque laboriosam ipsum illum deleniti voluptate
+              similique atque corrupti facilis, odio perferendis suscipit facere
+              itaque amet? Veritatis, tenetur nulla?
+            </h4>
+          </div>
+          <div class="col-6"></div>
         </div>
-        <div class="col-7"></div>
       </div>
     </section>
     <!-- Najemcy -->
-    <section id="najemcy"></section>
+    <section id="najemcy" class="h-100">
+      <div class="container vh-100"></div>
+    </section>
     <!-- Kontakt - offcanvas -->
     <section>
       <div
