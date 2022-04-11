@@ -1,0 +1,23 @@
+#zoom {
+  overflow: hidden;
+}
+
+#zoom img {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+#zoom:hover img {
+  transform: scale(1.2);
+  filter: brightness(2);
+}
+
+#zoom #divText {
+  visibility: hidden;
+}
+
+#zoom:hover #divText {
+  visibility: visible;
+  font-size: 20px;
+  background-color: #2a2929a5;
+}
