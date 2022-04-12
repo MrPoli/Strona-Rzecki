@@ -1,23 +1,32 @@
-#zoom {
+/* sala szkoleniowa */
+section #zoom {
   overflow: hidden;
 }
 
-#zoom img {
+section #zoom img {
   transition: all 0.5s ease;
   cursor: pointer;
 }
 
-#zoom:hover img {
+section #zoom:hover img {
   transform: scale(1.2);
-  filter: brightness(2);
+  filter: brightness(1.9);
 }
 
-#zoom #divText {
+section #zoom #divText {
   visibility: hidden;
 }
 
-#zoom:hover #divText {
+section #zoom:hover #divText {
   visibility: visible;
   font-size: 20px;
-  background-color: #2a2929a5;
+  background-color: #2f2f2fdd;
 }
+
+/* wynajem pomieszczeń */
+
+/* najemcy */
+
+/* o nas */
+
+/* kontakt */
