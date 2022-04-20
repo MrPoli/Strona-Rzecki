@@ -23,6 +23,7 @@
     />
 
     <title>Dom Kupiecki Rzecki</title>
+    <link rel="icon" type="image/gif" href="./Photo/dom-kupiecki-rzecki.png"/>
   </head>
   <body>
     <!-- Nav -->
@@ -71,15 +72,13 @@
               <a class="nav-link" href="#oNas">O nas</a>
             </li>
           </ul>
-          <button
+          <a
             class="btn btn-outline-danger me-3"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#kontakt"
-            aria-controls="offcanvasRight"
+            href="#kontakt"
           >
             Kontakt
-          </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -121,12 +120,24 @@
           type="button"
           class="btn btn-danger btn-lg mt-4 fs-6"
           style="border-radius: 22px"
-        >
+          data-bs-toggle="offcanvas"
+            data-bs-target="#napiszDoNas"
+            aria-controls="offcanvasBottom"
+          >
           <i class="bi bi-envelope pe-2"></i>Napisz do nas
         </button>
       </div>
     </header>
-
+<!-- offcanvas napisz do Nas -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="napiszDoNas" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
     <!-- Sala szkoleniowa -->
     <section
       id="salaSzkoleniowa"
@@ -138,12 +149,16 @@
           <div class="row text-center pt-5 pb-5">
             <h1 class="display-3">Sala szkoleniowa</h1>
           </div>
-          <div class="row">
+          <div class="row pt-4">
+            <div class="col-4 shadow">
+              <h5 class="text-black text-center fw-bolder my-4">Najepsza sala szkoleniowa<br>w Chełmie!</h5>
+              <p class="text-black">Do Państwa dyspozycji posiadamy salę szkoleniową przystosowaną do ....</p>
+            </div>
             <div
-              class="col-12 d-flex justify-content-center align-items-center"
+              class="col-8 d-flex mx-0 px-0"
             >
             
-              <div class="card w-75 back" id="zoom">
+              <div class="card w-100 shadow" id="zoom">
                 <a
         href="#"
         data-bs-toggle="modal"
@@ -158,11 +173,6 @@
                   <div class="row h-50"></div>
                   <div id="divText" class="row h-50 card-text px-5 pt-2">
                     <div class="card-body">
-                      <div
-                        class="row text-white justify-content-center fs-2 fw-bold"
-                      >
-                        Najlepsza sala szkoleniowa w Chełmie!
-                      </div>
                       <div class="row row-cols-2 align-items-center pt-3">
                         <div class="col-9">
                           <ul class="list-unstyled text-white fs-5">
@@ -191,6 +201,8 @@
         </div></a
       >
     </section>
+    <!-- kółka -->
+    <section></section>
     <!-- Wynajem pomieszczeń -->
     <section id="wynajem" class="vh-100" style="background-color: #ffffff">
       <div class="container pt-3 bg-">
@@ -200,20 +212,64 @@
           </h1>
         </div>
         <div class="row row-cols-2 justify-content-center">
-        <div class="col-4 mb-5 pe-0">
-          <img src="./Photo/Edytowane/IMG_4377_edit.jpg" class="img-fluid"alt="">
+        <div class="col-4 mb-5 pe-0 shadow-sm">
+          <a
+        href="#"
+        data-bs-toggle="modal"
+        data-bs-target="#wynajemModal1"
+      >
+          <img src="./Photo/Edytowane/IMG_4377_edit.jpg" class="img-fluid bigger" alt="">
+          </a>
         </div>
-        <div class="col-6 bg-light mb-5">
+        <div class="col-6 bg-light mb-5 shadow-sm">
         </div>
          
-        <div class="col-6 bg-light">
+        <div class="col-6 bg-light shadow-sm">
         </div>
-        <div class="col-4 ps-0 ">
-           <img src="./Photo/Edytowane/white room.jpg" class="img-fluid"alt="">
+        <div class="col-4 ps-0 shadow-sm">
+          <a
+        href="#"
+        data-bs-toggle="modal"
+        data-bs-target="#wynajemModal2"
+      >
+           <img src="./Photo/Edytowane/white room.jpg" class="img-fluid bigger"alt="">
+          </a>
         </div>
        </div>
         </div>
     </section>
+    <!-- modal do wynajem 1 -->
+    <div class="modal" tabindex="-1" id="wynajemModal1">
+      <div class="modal-dialog modal-xl" >
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-content" >
+            <img src="./Photo/Edytowane/IMG_4377_edit.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal do wynajem 2 -->
+    <div class="modal" tabindex="-1" id="wynajemModal2">
+      <div class="modal-dialog modal-xl" >
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-content" >
+            <img src="./Photo/Edytowane/white room.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Najemcy -->
     <section id="najemcy" class="vh-100" style="background-color: #f0f0f0">
       <div class="container pt-3" >
@@ -250,34 +306,30 @@
         </div>
       </div>
     </section>
-    <!-- Kontakt - offcanvas -->
-    <section>
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="kontakt"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+    <!-- Kontakt -->
+    <section class="text-white" id="kontakt">
+      <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col-8">
+            <p><i class="bi bi-telephone-fill pe-2"></i>telefon</p>
+            <p><i class="bi bi-building pe-2"></i>nazwa firmy</p>
+            <p><i class="bi bi-geo-alt-fill pe-2"></i>adres</p>
+            <p><i class="bi bi-envelope-fill pe-2"></i>mail</p>
+            <p><i class="bi bi-file-earmark-text-fill pe-2"></i>Nip/Regon</p>
+            <p><i class="bi bi-file-earmark-text-fill pe-2"></i>KRS</p>
+          </div>
+          <div class="col-4">
+            <p>Mapy google</p>
+          </div>
         </div>
-        <div class="offcanvas-body">...</div>
       </div>
     </section>
-    <!-- Kontakt -->
-    <section class="">
-      <div class="caontainer-fluid bg-dark"></div>
-    </section>
     <!-- Stopka -->
-    <footer></footer>
+    <footer class="bg-dark text-white bg-black fw-light">
+      <p class="m-0">Created by Łukasz Poliszuk 2022</p>
+    </footer>
 
-    <!-- okienko modalne do zdjęć strony szkoleniowej-->
+    <!-- karuzela do zdjęć strony szkoleniowej-->
     <div
       class="modal fade"
       id="salaSzkoleniowaPhotos"
@@ -288,9 +340,6 @@
       <div class="modal-dialog">
         <div class="modal-content position-absolute" style=" min-width: 60vw;  left:50%; transform: translate(-50%)">
           <div class="modal-header" >
-            <h5 class="modal-title" id="exampleModalLabel">
-              Zdjęcia
-            </h5>
             <button
               type="button"
               class="btn-close"
