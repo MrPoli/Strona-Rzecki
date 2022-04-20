@@ -25,6 +25,15 @@ section #zoom:hover #divText {
 
 /* wynajem pomieszczeń */
 
+#wynajem .bigger {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#wynajem .bigger:hover {
+  transform: scale(1.3);
+}
+
 /* najemcy */
 
 /* o nas */
