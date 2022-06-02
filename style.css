@@ -1,15 +1,28 @@
+/* globalne */
+.bg-color-darker {
+  background-color: #f0f0f0;
+}
+
+section .indexUnder {
+  transform: scale(1.1);
+}
+
+section .indexUpper {
+  transform: scale(1.1);
+}
+
 /* sala szkoleniowa */
 section #zoom {
   overflow: hidden;
   cursor: pointer;
 }
 
-section #zoom img {
+section #zoom {
   transition: all 0.5s ease;
 }
 
-section #zoom:hover img {
-  transform: scale(1.2);
+section #zoom:hover {
+  transform: scale(1.1);
   filter: brightness(1.1);
 }
 
@@ -31,11 +44,24 @@ section #zoom:hover #divText {
 }
 
 #wynajem .bigger:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 /* najemcy */
+#najemcy .bigger {
+  transition: all 0.5s ease;
+}
+#najemcy .bigger:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
 
 /* o nas */
-
-/* kontakt */
+#oNas .bigger {
+  z-index: 1;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+#oNas .bigger:hover {
+  transform: scale(1.2);
+}
