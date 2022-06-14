@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-xl navbar-light bg-light fs-6 fw-bold sticky-top"
     style="font-family: 'Cinzel', serif">
     <div class="container-fluid">
-      <a class="navbar-brand pe-3 border-end" href="#">
+      <a class="navbar-brand ps-2 pe-2" href="#stronaGlowna">
         <img src="./Photos/dom-kupiecki-rzecki.png" alt="Dom Kupiecki " width="120px" height="71px"
           class="d-inline-block d-none d-md-block align-text-top" />
       </a>
@@ -61,7 +61,10 @@
         background: url(./Photos/main.jpg) center/cover no-repeat;
         font-family: 'Cinzel', serif;
       ">
+    <a href="#stronaGlowna" class="d-md-none"><i class="bi bi-arrow-up-circle-fill position-fixed fs-1 text-danger"
+        style="bottom:10vh; left: 6vw; z-index: 2;"></i></a>
     <div class="container text-center">
+
       <div class="row row-cols-1 h-25 mb-5 pb-3 pt-3" style="
             background: linear-gradient(
               to right,
@@ -90,7 +93,7 @@
     </div>
   </header>
   <!-- offcanvas do napisz do Nas -->
-  <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="napiszDoNas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas offcanvas-start bg-dark mw-100" tabindex="-1" id="napiszDoNas" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
       <h2 class="offcanvas-title text-white bg-dark" id="offcanvasLabel">Czekamy na Twoją wiadomość!</h2>
       <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas"
@@ -101,17 +104,17 @@
         enctype="text/plain">
         <div class="row mb-4">
           <div class="col">
-            <input type="text" name="Imie" placeholder="Imię" class="form-control" size="50">
+            <input type="text" name="Imie" placeholder="Imię" class="form-control" maxlength="50">
           </div>
         </div>
         <div class="row mb-3">
           <div class="col">
-            <input type="text" name="Nazwisko" placeholder="Nazwisko" class="form-control" size="50">
+            <input type="text" name="Nazwisko" placeholder="Nazwisko" class="form-control" maxlength="50">
           </div>
         </div>
         <div class="row mb-2">
           <div class="col">
-            <textarea type="text" size="1000" name="Tresc wiadomosci" class="form-control mt-3"
+            <textarea type="text" maxlength="1000" name="Tresc wiadomosci" class="form-control mt-3"
               placeholder="Wiadomość..." style="height: 20vh"></textarea>
           </div>
         </div>
@@ -144,7 +147,7 @@
               niezbędnych prezentacji za pomocą projektora, czy rysowanie zawiłych wykresów na tablicy, czy też
               notowanie burzy mózgów na flipcharcie, każdy z Państwa znajdzie coś dla siebie!
             </p>
-            <p class=" pe-xl-2 pe-xxl-4 fw-bold">W razie potrzeby zapewniamy możliwość skorzystania z dodatkowych biurek
+            <p class=" pe-xl-2 pe-xxl-4">W razie potrzeby zapewniamy możliwość skorzystania z dodatkowych biurek
               ponad
               widoczne na
               zdjęciach, a
@@ -209,7 +212,7 @@
     </div>
   </section>
   <!-- karuzela do zdjęć sali szkoleniowej-->
-  <div class="modal fade" id="salaSzkoleniowaPhotos" tabindex="-1" aria-labelledby="exampleModalLabel"
+  <div class="modal fade align-self-center" id="salaSzkoleniowaPhotos" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content position-absolute" style=" min-width: 60vw;  left:50%; transform: translate(-50%)">
@@ -268,32 +271,49 @@
         </h1>
       </div>
       <div class="row justify-content-center">
-        <div class="col-9 col-md-5 mb-0 mb-md-5 ps-0 pe-0">
+        <div class="col-9 col-xl-6 col-xxl-5 mb-0 mb-xl-5 ps-0 pe-0">
           <a href="#" data-bs-toggle="modal" data-bs-target="#wynajemModal1">
             <img src="./Photos/korytarz.jpg" class="img-fluid shadow bigger" alt="korytarz">
           </a>
         </div>
-        <div class="col-9 col-md-6 mb-5 pt-2 pe-2 shadow bg-color-darker pt-2">
-          <p class="fs-5">Dom Kupiecki Rzecki Sp. z o.o. wynajmuje lokale użytkowe przeznaczone dla działalności
+        <div class="col-9 col-xl-6 mb-5 pt-2 pe-2 shadow bg-light">
+          <p class="text-center fw-bolder fs-5" style="font-family: 'Cinzel', serif">Dom Kupiecki Rzecki Sp.
+            z o.o.
+            wynajmuje
+            lokale użytkowe przeznaczone
+            dla
+            działalności
             przedsiębiorstw o
             różnych specjalnościach.</p>
-          <p>Lokale są położone na wszystkich piętrach budynku, od piwnicy aż do III piętra.</p>
-          <p>Wielkość lokali wynosi od 14<sup>m2</sup> do 120<sup>m2</sup>.</p>
+          <p class="fs-6 text-black">Lokale są położone na wszystkich piętrach budynku, od piwnicy aż do III piętra.
+            Wielkość
+            lokali wynosi od
+            14m<sup>2</sup> do 120m<sup>2</sup>.</p>
           <p>W piwnicy oraz na III piętrze znajdują się lokale o wielkości odpowiednio 120<sup>m2</sup> oraz
-            60<sup>m2</sup>.</p>
-          <p>Na parterze są położone cztery lokale o wielkości od 14<sup>m2</sup> do 80 <sup>m2</sup>.</p>
-          <p>Na I piętrze znajduje się sześć lokali o wielkości od 14<sup>m2</sup> do 35 <sup>m2</sup>. Są to lokale z
+            60<sup>m2</sup>. Na parterze są położone cztery lokale o wielkości od 14m<sup>2</sup> do 80m<sup>2</sup>.
+            Na I piętrze znajduje się natomiast sześć lokali o wielkości od 14m<sup>2</sup> do 35m<sup>2</sup>. Są to
+            lokale z
             przeznaczeniem biurowym.</p>
           <p>Na II piętrze znajduje się lokal o wielkości 60 m2, który może być dostosowany zarówno do działalności
             biurowej, jak i działalności o innym charakterze.</p>
         </div>
 
-        <div class="col-9 col-md-6 pt-2 pe-2 bg-light shadow bg-color-darker order-2 order-md-1">
-          <p>Lokale zape</p>
+        <div class="col-9 col-xl-6 pt-2 pe-2 bg-light text-black shadow bg-color-darker order-2 order-xl-1">
+          <p>Lokale mają dostęp do ogrzewania zapewnionego przez administratora budynku. Wszystkie lokale mają również
+            zagwarantowany dostęp do energii elektrycznej i posiadają własne liczniki prądu, dla zapewnienia zasad
+            rozliczania energii
+            zgodnie z rzeczywistym zużyciem.</p>
+          <p>Lokale o metrażu wynoszącym od 60m<sup>2</sup> są również wyposażone w dostęp do wody bieżącej. </p>
+          <p>W razie potrzeby zapewniamy częściowe wyposażenie lokalu, jak również jesteśmy otwarci na dostosowywanie
+            lokalu do swoich potrzeb przez każdego najemcę.</p>
+          <p class="fs-4 text-center fw-bolder">W chwili obecnej do wynajęcia pozostał wyłącznie jeden lokal, o
+            wielkości
+            14m<sup>2</sup>!</p>
         </div>
-        <div class="col-9 col-md-5 ps-0 pe-0 order-1 order-md-2">
+        <div class="col-9 col-xl-6 col-xxl-5 ps-0 pe-0 order-1 order-xl-2">
           <a href="#" data-bs-toggle="modal" data-bs-target="#wynajemModal2">
             <img src="./Photos/pusty_lokal.jpg" class="img-fluid shadow bigger" alt="pusty lokal">
+
           </a>
         </div>
       </div>
@@ -335,16 +355,27 @@
         </h1>
       </div>
       <div class="row mt-2 justify-content-center">
-        <div class="col-10 col-md-8 ps-0 ps-md-3 pe-0 pe-md-4 pb-3 pb-md-5 bigger">
+        <div class="col-10 col-xl-8 ps-0 ps-xl-3 pe-0 pe-xl-4 pb-3 pb-xl-5 bigger">
           <a href="#" data-bs-toggle="modal" data-bs-target="#oNasModal">
-            <img src="./Photos/budynek-front.jpg" alt="budynek-front" class="img-fluid shadow-"></a>
+            <img src="./Photos/budynek-front.jpg" style="" alt="budynek-front" class="img-fluid shadow-sm"></a>
         </div>
-        <div class="col-10 col-md-4 bg-light pt-2 ps-2 ps-sm-4 ps-lg-5 pe-2 mt-md-5 indexUnder shadow-lg">Lorem ipsum
-          dolor
-          sit
-          amet
-          consectetur
-          adipisicing elit. Quis minima dolore magnam et perferendis, iusto fugiat alias pariatur similique minus?</div>
+        <div class="col-10 col-xl-4 bg-light mt-3 pt-3 ps-2 ps-sm-4 ps-xl-5 pe-2 mt-xl-5 indexUnder shadow-lg">
+          <p class="fw-bolder text-center pt-2 pt-xl-0" style="font-family: 'Cinzel', serif">Istniejemy na chełmskim
+            rynku od
+            1989
+            r.
+          </p>
+          <p>Spółka Dom Kupiecki Rzecki Sp. z o.o. została założona w 1989 r. Od tego czasu
+            nieprzerwanie prowadzi
+            działalność na lokalnym rynku. Jej funkcjonowanie nie jest jednak ograniczone regionalnie, gdyż stale
+            współpracuje z przedsiębiorstwami prowadzącymi działalność w sektorze nieruchomości w centralnej Polsce.</p>
+          <p> Obecnie Spółka skupia się na zarządzaniu nieruchomościami,
+            w tym na ich wynajmie oraz obsłudze szkoleń i konferencji.
+          </p>
+          <p>Od 18 lat Prezesem Zarządu Spółki jest <span class="fw-bold">Pani Celina Ewa Sałek</span>, która z
+            przyjemnością udzeli Państwu
+            wszelkich informacji związanych ze świadczonymi przez Spółkę usługami.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -370,10 +401,10 @@
           Nasi najemcy
         </h1>
       </div>
-      <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-5 pt-1">
-
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a href="https://pl-pl.facebook.com/biuro.rachunkowe.renoma/"
-            class="text-decoration-none text-black" target="_blank">
+      <div class="row row-cols-1 justify-content-center row-cols-md-2 row-cols-xl-5 pt-1">
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a
+            href="https://pl-pl.facebook.com/biuro.rachunkowe.renoma/" class="text-decoration-none text-black"
+            target="_blank">
             <div class="card shadow">
               <img src="./Photos/Najemcy/Renoma.jpg" class="card-img-top" alt="Biuro Rachunkowe Renoma">
               <div class="card-body bg-color-darker d-flex flex-column justify-content-between">
@@ -384,7 +415,7 @@
           </a>
         </div>
 
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a href="http://kancelaria.poliszuk.pl"
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a href="http://kancelaria.poliszuk.pl"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
               <img src="./Photos/Najemcy/Kancelaria.jpg" class="card-img-top" alt="Kancelaria Radcy Prawnego">
@@ -395,7 +426,7 @@
             </div>
           </a>
         </div>
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a
             href="https://pracownia-psychologii-transportu-zaneta-mielnik.business.site"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
@@ -407,7 +438,7 @@
             </div>
           </a>
         </div>
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a href="https://nieruchomosci-veto.gratka.pl"
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a href="https://nieruchomosci-veto.gratka.pl"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
               <img src="./Photos/Najemcy/Veto.jpg" class="card-img-top p-1" alt="Biuro Nieruchomości Veto">
@@ -419,7 +450,7 @@
           </a>
         </div>
 
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a href="http://mandulachelm.pl"
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a href="http://mandulachelm.pl"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
               <img src="./Photos/Najemcy/Mandula.jpg" class="card-img-top" alt="Pracownia Wędkarska Mandula">
@@ -434,7 +465,7 @@
           </a>
         </div>
 
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a
             href="https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Siłownia-Olimp-676519639035139/?locale2=pl_PL"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
@@ -447,7 +478,7 @@
           </a>
         </div>
 
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a href="https://www.facebook.com/groups/301972618046288"
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a href="https://www.facebook.com/groups/301972618046288"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
               <img src="./Photos/Najemcy/MKS_Olimp.jpg" class="card-img-top" alt="MKS Olimp Chełm">
@@ -458,7 +489,7 @@
             </div>
           </a>
         </div>
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a href="https://lhuszcz.agentpzu.pl"
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a href="https://lhuszcz.agentpzu.pl"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
               <img src="./Photos/Najemcy/Pzu.jpg" class="card-img-top" alt="PZU">
@@ -469,7 +500,7 @@
             </div>
           </a>
         </div>
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a
             href="https://pl-pl.facebook.com/pages/category/Footwear-Store/SKLEP-Pelikan-CHEŁM-1916152071944091/"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
@@ -481,7 +512,7 @@
             </div>
           </a>
         </div>
-        <div class="col p-5 px-xl-3 pb-xl-0 bigger"><a href="https://www.facebook.com/PizzeriaAmiciChelm/"
+        <div class="col-8 col-lg-5 p-5 px-xl-3 pb-xl-0 bigger"><a href="https://www.facebook.com/PizzeriaAmiciChelm/"
             class="text-decoration-none text-black" target="_blank">
             <div class="card shadow">
               <img src="./Photos/Najemcy/Amici.jpg" class="card-img-top" alt="Pizzeria Amici">
@@ -522,7 +553,7 @@
           <!-- mapka google do sm -->
         </div>
         <div class="col pb-2 pt-3 text-center d-block d-md-none">
-          <iframe
+          <iframe class="mw-100"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10015.966394132724!2d23.469587!3d51.127063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f12c7789b8c55e7!2sDom%20Kupiecki%20Rzecki!5e0!3m2!1spl!2spl!4v1651015935673!5m2!1spl!2spl"
             width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -532,7 +563,7 @@
   </section>
   <!-- Stopka -->
   <footer class="bg-dark text-white fw-light text-end pe-3">
-    <div class="m-0 font-monospace">Created by Łukasz Poliszuk 2022</div>
+    <div class="m-0 font-monospace">Copyright© by Łukasz Poliszuk 2022</div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
